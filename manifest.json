@@ -1,0 +1,35 @@
+{
+	"name": "KloudCatch Adder",
+	
+	"version": "0.1",
+	
+	"description": "Add content to your KloudCatch acount",
+	
+	"page_action": {
+		"default_icon": "icon16.png",
+		"default_title": "Add to KloudCatch",
+		"popup": "popup.html"
+	},
+	
+	"permissions": [
+		"tabs",
+		"http://*/*",
+		"https://*/*"
+	],
+	
+	"background_page": "background.html",
+		
+	"options_page": "options.html",
+	
+	"icons": {
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	
+	"content_scripts": [ {
+      "exclude_globs": [  ],
+	  "include_globs": [ "http://www.google.*/reader/*", "https://www.google.*/reader/*" ],
+      "js": [ "kcapi.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ]
+}
