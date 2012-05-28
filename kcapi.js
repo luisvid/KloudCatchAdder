@@ -3,7 +3,7 @@ var apikey = '6a1gGdT4p0Z4cD573dTf3aMk3aA0l54b';
 var kcapi = {
 
 	authenticate: function(username, password, callback) {
-		
+		//var reqUrl = 'http://localhost:3000/login';
 		var reqUrl = 'http://www.kloudcatch.com/login';
         
 		
@@ -27,7 +27,8 @@ var kcapi = {
 	
 	
 	add: function(url, title, callback) {
-		
+		//var reqUrl = 'http://localhost:3000/droplets/';
+
 		var reqUrl = 'http://www.kloudcatch.com/droplets/';
 
 		
